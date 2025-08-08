@@ -1,0 +1,282 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+:root{
+	--color-primary:#7d1eff;
+	--color-secondary:#3f3849;
+	--color-gris:#aca3ba;
+	--color-negro:#363636;
+	--fondo-negro:#363636;
+	--color-verde:#99ffee;
+	--color-morado:#994fff;
+	--color-morado-suave:#cea9ff;
+	--color-naranja:#f3b560;
+	--menu-hover:#ccc;
+	--color-features:#8d8698;
+	--fondo-footer:#363636;
+}
+
+body{
+	font-family: "Poppins", sans-serif;
+	font-size: 16px;
+	color: var(--color-negro);
+}
+header{
+	background-color: var(--fondo-negro);
+	padding: 10px 0;
+}
+
+
+#hero{
+	background-image: url("../img/Ellipse.png");
+	background-size: 800px;
+	background-position: right 120%;
+	background-repeat: no-repeat;
+	background-color: var(--fondo-negro);
+	padding: 3% 0;
+}
+
+.color-blanco{
+	color: #fff;
+}
+.color-primary{
+	color: var(--color-primary);
+}
+.color-secondary{
+	color: var(--color-secondary);
+}
+.color-gris{
+	color: var(--color-gris);
+}
+.color-morado{
+	color: var(--color-morado);
+}
+.color-morado-suave{
+	color: var(--color-morado-suave);
+}
+.color-verde{
+	color: var(--color-verde);
+}
+.color-naranja{
+	color: var(--color-naranja);
+}
+.bg-primary{
+	background-color: var(--color-primary) !important;
+}
+
+.encabezado-hero{
+	font-size: 60px;
+	font-weight: 700;
+	margin-top: 15%;
+}
+
+.subtitulo-hero{
+	font-size: 12px;
+	font-weight: 700;
+	margin: 10% 0 5%;
+}
+
+#hero .small{
+	font-size: 11px;
+}
+
+.img-hero{
+	width: 400px;
+}
+
+#hero .ps-5{
+	padding-left: 25% !important;
+}
+
+.titulo-centrado{
+	text-align: center;
+	padding: 0px 20%;
+	margin-bottom: 8%;
+}
+
+.section{
+	padding: 8% 0;
+	
+}
+
+.background-section{
+	background-image: url("../img/Ellipse-bg.jpg");
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+
+
+.subtitulo{
+	color: var(--color-gris);
+	font-size: 15px;
+	text-transform: uppercase;
+	font-weight: 600;
+	margin-bottom: 25px;
+}
+.titulo{
+	font-size: 50px;
+	font-weight: 800;
+	margin-bottom: 40px;
+}
+.subtitulo-texto{
+	font-size: 18px;	
+	font-weight: normal;
+}
+
+.capa-about{
+	overflow: hidden;
+}
+.capa-morada{
+	position: absolute;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(125,30,255,0.80);
+	opacity:0;
+	transition: all 0.3s ease-in;
+}
+.capa-icono{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	display: grid;
+	align-content: center;
+	text-align: center;
+	opacity:0;
+	transition: all 0.3s ease-in;
+}
+.capa-icono i{
+	background-color: #fff;
+	width: 60px;
+	height: 60px;
+	line-height: 60px;
+	border-radius: 100%;
+	margin: auto;
+}
+.capa-about:hover .capa-morada,
+.capa-about:hover .capa-icono{
+	opacity: 1;
+	transition: all 0.3s ease-in;
+}
+.capa-about img{
+	transition: all 0.3s ease-in;
+}
+.capa-about:hover img{
+	transform: scale(1.1);
+	transition: all 0.3s ease-in;
+}
+
+.list-features h4{
+	font-size: 16px;
+	font-weight: 800;
+}
+.list-features p{
+	color: var(--color-features);
+}
+.list-features i{
+	color: var(--color-morado);
+	font-size: 20px;
+}
+.list-features li{
+	margin-bottom: 60px;
+	transition: all 0.3s ease-in;
+}
+.list-features li:hover{
+	padding-left: 20px;
+	transition: all 0.3s ease-in;
+}
+
+#features .row:nth-child(2){
+	margin-top: 10%;
+}
+
+#video .capa-icono{
+	opacity: 1;
+}
+
+
+#straps{
+	background-color: var(--fondo-negro);
+}
+.caja-producto{
+	background-size: cover;
+	background-position: bottom;
+	background-repeat: no-repeat;
+	height: 400px;
+	text-align: center;
+	padding-top: 15%;
+	color: #fff;
+}
+.producto-verde{
+	background-image: url("../img/green-watch.jpg");
+}
+.producto-morado{
+	background-image: url("../img/purple-watch.jpg");
+}
+.producto-naranja{
+	background-image: url("../img/orange-watch.jpg");
+}
+
+.texto-producto{
+	font-weight: 700;
+	margin-bottom: 40px;
+}
+.texto-band{
+	font-size: 14px;
+	text-transform: uppercase;
+}
+.texto-precio{
+	font-size: 22px;
+	font-weight: 700;
+}
+
+.btn-more,
+.btn-more:hover{
+	color: #fff;
+	border: 2px solid #fff;
+	border-radius: 30px;
+	padding: 15px 40px;
+	text-transform: uppercase;
+	font-weight: 600;
+}
+.btn-more:hover{
+	color: #ddd;
+}
+
+#testimonials{
+	background-image: url("../img/bg-Vector-Smart.jpeg");
+	background-size: cover;
+	background-position: bottom;
+}
+#testimonials img{
+	border-radius: 100px;
+}
+#testimonials p{
+	color: var(--color-gris);
+	font-size: 18px;
+	font-weight: 300;
+	margin-top: 30px;
+}
+#testimonials h4{
+	font-size: 16px;
+	font-weight: 800;
+}
+
+
+#form{
+	background-color: var(--color-primary);
+}
+
+footer{
+	background-color: var(--fondo-footer);
+	text-align: center;
+	padding: 30px 0;
+	color: var(--color-gris);
+	font-size: 12px;
+}
+
+
+
+
+
